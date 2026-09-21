@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "Kanellbulle",
+      "price": 20
+    },
+    {
+      "name": "Kaffe",
+      "price": 10
+    },
+    {
+      "name": "Te",
+      "price": 12
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Linus Lindroth",
+      "type": "brons"
+    },
+    {
+      "id": "2",
+      "name": "Sara Andersson",
+      "type": "silver"
+    },
+    {
+      "id": "3",
+      "name": "Bengt Svensson",
+      "type": "guld"
+    },
+    {
+      "id": "4",
+      "name": "Sara Andersson",
+      "type": "brons"
+    }
+  ],
+  "customerTypes": [
+    {
+      "name": "brons",
+      "discount": "5%"
+    },
+    {
+      "name": "silver",
+      "discount": "10%"
+    },
+    {
+      "name": "guld",
+      "discount": "20%"
+    }
+  ]
+}
