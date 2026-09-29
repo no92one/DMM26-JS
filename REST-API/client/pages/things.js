@@ -9,7 +9,11 @@ export default async function things() {
     `;
 
   for (let thing of things) {
-    html += `<article>${thing.name} <img src="images/${thing.image}"></article>`;
+    html += `<article>
+      <h3>${thing.name}</h3>
+      <p>Pris: ${thing.price}</p>
+    <img src="images/${thing.image}">
+    </article>`;
   }
 
   html += `</section>`;

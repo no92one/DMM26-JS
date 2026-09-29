@@ -1,0 +1,7 @@
+{
+  "name": "rest-api-root",
+  "private": true,
+  "scripts": {
+    "start": "cd server && node app.js"
+  }
+}
