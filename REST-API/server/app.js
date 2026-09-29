@@ -9,6 +9,14 @@ const db = new DatabaseSync("./database.db");
 app.use(cors());
 app.use(express.json());
 
+// Serverar klienten (index.html, script.js) från client-mappen.
+//
+// Sökvägen utgår från app.js, så det fungerar oavsett
+// vilken mapp servern startas från.
+//
+// Öppna http://localhost:3000 i webbläsaren för att se klienten.
+app.use(express.static(import.meta.dirname + "/../client"));
+
 // Enkel route för att kontrollera att servern fungerar.
 app.get("/api", (request, response) => {
   response.send("Hello World!");
