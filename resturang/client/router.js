@@ -17,3 +17,20 @@ async function router() {
 
 window.onhashchange = router
 window.onload = router
+
+const nav = document.querySelector("nav")
+
+nav.addEventListener("click", (event) => {
+
+    // Kontrollera att det faktiskt var en länk som klickades.
+    if (event.target.tagName === "A") {
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: "nav_click",
+            menu_item: event.target.innerText,
+            destination: event.target.getAttribute("href")
+        });
+    }
+});
